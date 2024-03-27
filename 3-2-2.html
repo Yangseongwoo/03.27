@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const date = new Date();
+    const hour = date.getHours();
+
+
+    /* true가 되면 계속 실행이 되는 형태 break를 만나기 전까지 */
+    /* 어느 특정한 조건이 될 때까지 반복될 때 사용할 수 있음 */
+    switch (true) {
+        case hour < 11: 
+        alert('아침 먹을 시간입니다.')
+        break;
+
+        case hour < 15: 
+        alert('점심 먹을 시간입니다')
+        break;
+
+        default: 
+        alert('저녁 먹을 시간입니다.')
+        break;
+    }
+</script>
+</body>
+</html>

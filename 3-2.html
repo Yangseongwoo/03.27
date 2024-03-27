@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const input = Number(prompt('숫자를 입력하세요', '숫자'))  /* num은 안에 들어온 자료를 숫자로 바꿔주는 역할 */
+
+        switch(input % 2) {
+            case 0:
+                alert('짝수입니다.')
+                break;  /* switch를 빠져나올 수 있게 하는 게 break다 */
+
+                case 1:
+                    alert('홀수입니다.')
+                    break;
+
+                    default:
+                        alert('숫자가 아닙니다.')
+                        break;
+        }
+    </script>
+</body>
+</html>
